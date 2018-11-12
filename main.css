@@ -11,8 +11,9 @@ body {
   display: flex;
   font-family: 'Leckerli One', cursive;
   color: white;
-  font-size: 4rem;
+  font-size: 5rem;
   padding-top: 100px;
+  padding-bottom: 50px;
 }
 .caption {
   width: 70%;
@@ -20,7 +21,7 @@ body {
   display:flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 auto 100px;
   justify-content: space-around;
   text-align: center;
 }
@@ -40,4 +41,51 @@ body {
 }
 .emphasized {
   font-weight: 700;
+}
+.row {
+  margin: 0 auto;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.left-button {
+  height: 70px;
+  width: 230px;
+  background-color: #16a085;
+  color: white;
+  border-top: #16a085;
+  border-left: #16a085;
+  border-right: #16a085;
+  border-bottom: 2px solid #3bd4b6;
+  border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+.left-button:hover {
+  background-color: #19b596;
+  cursor: pointer;
+}
+.left-button:active {
+  position: relative;
+  top: 2px;
+}
+
+.right-button {
+  height: 70px;
+  width: 230px;
+  background-color: #22303d;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+.right-button:hover {
+  background-color: #141d25;
+  cursor: pointer;
 }
