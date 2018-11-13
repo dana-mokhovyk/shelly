@@ -44,11 +44,13 @@ body {
   font-weight: 700;
 }
 .row {
-  margin: 0 auto;
-  width: 40%;
+  margin: 0 auto 1px;;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.narrow {
+  width: 40%;
 }
 .left-button {
   height: 70px;
@@ -116,4 +118,17 @@ body {
 .arrow-button:active {
   position: relative;
   top: 2px;
+}
+.stripe {
+  width: 12.5%;
+  height: 3px;
+}
+.stripe-light {
+  background-color: #a1f1e1;
+}
+.stripe-dark {
+  background-color: #16a085;
+}
+.stripe-medium {
+  background-color: #19cfab;
 }
