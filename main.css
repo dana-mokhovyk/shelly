@@ -198,3 +198,22 @@ button:focus {
   display: grid;
   grid-template-columns: 87.5% 12.5%;
 }
+.main-content-narrow {
+  padding-top: 100px;
+  display: flex;
+  margin: 0 auto;
+  width: 70%;
+  height: 100%;
+  background-color: red;
+}
+.image-content {
+  display: flex;
+  width: 40%;
+  justify-content: flex-end;
+}
+.text-content {
+  width: 50%;
+}
+.align-center{
+  align-items: center;
+}
