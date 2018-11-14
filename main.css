@@ -95,13 +95,20 @@ body {
   background-color: #141d25;
   cursor: pointer;
 }
-.right-button:active {
+button:active {
+  position: relative;
+  top: 2px;
+}
+button:focus {
+  outline: none;
+}
+/*.right-button:active {
   position: relative;
   top: 2px;
 }
 .right-button:focus {
   outline: none;
-}
+}*/
 .arrow-button {
   display: flex;
   width: 35px;
@@ -112,13 +119,13 @@ body {
   border-radius: 50%;
   fill: white;
 }
-.arrow-button:focus {
+/*.arrow-button:focus {
   outline: none;
 }
 .arrow-button:active {
   position: relative;
   top: 2px;
-}
+}*/
 .stripe {
   width: 12.5%;
   height: 3px;
@@ -155,6 +162,9 @@ body {
   text-transform: uppercase;
   transition: all 0.5s ease;
 }
+.nav-list-item:hover {
+  color: #3a3a3a;
+}
 .nav-list-logo {
   font-family: 'Leckerli One', cursive;
   color: #3a3a3a;
@@ -167,6 +177,23 @@ body {
   height: 1px;
   background-color: #a4a6a8;
 }
+.mail-button {
+  display: flex;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background-color: #3a3a3a;
+  border: solid 2px #3a3a3a;
+  border-radius: 50%;
+  fill: white;
+}
+/*.mail-button:focus {
+  outline: none;
+}
+.mail-button:active {
+  position: relative;
+  top: 2px;
+}*/
 .container {
   display: grid;
   grid-template-columns: 87.5% 12.5%;
