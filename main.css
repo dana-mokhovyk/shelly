@@ -146,6 +146,7 @@ button:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 1;
 }
 
 .sidenav a {
@@ -204,16 +205,44 @@ button:focus {
   margin: 0 auto;
   width: 70%;
   height: 100%;
-  background-color: red;
 }
 .image-content {
   display: flex;
   width: 40%;
-  justify-content: flex-end;
 }
 .text-content {
   width: 50%;
 }
 .align-center{
   align-items: center;
+}
+.content-notation {
+  font-style: italic;
+  color: #777777;
+}
+.content-header {
+  color: #363636;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.plain-text {
+  color: #777777;
+  font-family: 'Open Sans', sans-serif;
+}
+.arrow-button-green {
+  display: flex;
+  width: 35px;
+  height: 35px;
+  border: solid 2px #16a085;
+  border-radius: 50%;
+  fill: #16a085;
+}
+.diagonal {
+  position: relative;
+  top: -50px;
+  height: 2px;
+  background-color: #ebeeef;
+  transform: rotate(15deg) scaleX(1.5);
+  transform-origin: left;
 }
