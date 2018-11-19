@@ -44,13 +44,13 @@ body {
   font-weight: 700;
 }
 .row {
-  margin: 0 auto 1px;;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 .narrow {
   width: 40%;
+  margin: 0 auto;
 }
 .left-button {
   height: 70px;
@@ -202,6 +202,7 @@ button:focus {
 .main-content-narrow {
   padding-top: 100px;
   display: flex;
+  flex-direction: column;
   margin: 0 auto;
   width: 70%;
   height: 100%;
@@ -220,7 +221,7 @@ button:focus {
   font-style: italic;
   color: #777777;
 }
-.content-header {
+.content-title {
   color: #363636;
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
@@ -238,10 +239,48 @@ button:focus {
   border-radius: 50%;
   fill: #16a085;
 }
-.diagonal {
+.tilt {
   position: relative;
-  top: 30px;
   height: 2px;
   background-color: #ebeeef;
-  transform: rotate(15deg) scaleX(1.5);
+}
+.tilt-left {
+  top: 30px;
+  transform: rotate(10deg) scaleX(1.5);
+}
+.tilt-right {
+  transform: rotate(-10deg) scaleX(1.5);
+}
+.row-center {
+  width:
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img {
+  width: 150px;
+  height: 150px;
+  border: 10px solid white;
+  outline: 1px solid #e1e1e1;
+  background-color: #e4e8ea;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.card-title {
+  color: #363636;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+.card-text {
+  font-style: italic;
+  color: #777777;
+  text-align: center;
+  font-size: 0.9rem;
 }
